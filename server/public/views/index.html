@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>MangaStorm</title>
+    <!-- STYLES -->
+      <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/vendors/bootstrap/css/bootstrap-theme.min.css" />
+      <!-- MY CUSTOM CSS -->
+    <link rel="stylesheet" href="/assets/styles/style.css" />
+
+    <!-- SCRIPTS -->
+      <!-- ANGULAR -->
+    <script type="text/javascript" src="/assets/vendors/angular/angular.min.js"></script>
+    <script type="text/javascript" src="/assets/vendors/angular/angular-animate.min.js"></script>
+    <script type="text/javascript" src="/assets/vendors/angular/angular-route.min.js"></script>
+      <!-- ANGULAR UI BOOTSTRAP -->
+    <script type="text/javascript" src="/assets/vendors/angular-ui-bootstrap/ui-bootstrap-tpls.js"></script>
+      <!-- MY JAVASCRIPT -->
+    <script type="text/javascript" src="/assets/scripts/app.js"></script>
+    <script type="text/javascript" src="/assets/scripts/controllers.js"></script>
+    <script type="text/javascript" src="/assets/scripts/factories.js"></script>
+
+  </head>
+  <body ng-controller="MainController">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid navbar-top-container">
+        <div class="navbar-header">
+          <button type="button" ng-click="isCollapsed = !isCollapsed" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <a class="navbar-brand logo" href="#main" ng-click="isCollapsed = true">MangaStorm
+            <!-- <img alt="Brand" src="..."> -->
+      </a>
+
+        </div>
+        <div class="collapse navbar-collapse" uib-collapse="isCollapsed" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#series" ng-click="isCollapsed = true">Series</a></li>
+          <li><a href="#series" ng-click="isCollapsed = true">Favorites</a></li>
+        </ul>
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Login</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+      <div class="view" ng-view>
+
+      </div>
+
+  </body>
+</html>

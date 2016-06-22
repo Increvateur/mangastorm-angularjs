@@ -1,0 +1,45 @@
+/*Colors for future use:
+color: #0055b3;
+color: #007aff;
+color: #0062cc;*/
+
+@font-face {
+    font-family: 'SSF4 Abuket';
+    src: url('/assets/fonts/ssf4_abuket-webfont.woff2') format('woff2'),
+         url('/assets/fonts/ssf4_abuket-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  padding-top: 50px;
+  background-color: #3D4148;
+  color: white;
+}
+
+a {
+  color: #0062cc;
+  text-decoration: none;
+}
+
+a:focus, a:hover {
+  color: #007aff;
+  text-decoration: none;
+}
+
+.logo {
+  font-family: SSF4 Abuket;
+}
+
+.view {
+  background-color: #3D4148;
+}
+
+.manga-series {
+  padding: 20px;
+  color: #0055b3;
+}
+
+/*.series-cards {
+  margin-right: 20px;
+}*/

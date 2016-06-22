@@ -1,0 +1,9 @@
+<div class="chapters" ngcloak>
+  <h1>{{ chapterNames.name }}</h1>
+  <p>{{ chapterNames.description }}</p>
+  <div class="chapter-list" ng-repeat="chapter in chapterList">
+    <a ng-href="#series/{{ chapterNames.link_name }}/{{ chapter.chapter_number }}">Chapter {{ chapter.chapter_number }}: {{ chapter.chapter_name }}</a>
+    <p></p>
+
+  </div>
+</div>

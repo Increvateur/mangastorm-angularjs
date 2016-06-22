@@ -1,0 +1,14 @@
+<div class="container-fluid manga-series" ngcloak>
+  <div class="row">
+      <div class="col-xs-4 col-sm-3 col-md-2 col-lg-2" ng-repeat="title in seriesNames | orderBy:'name'">
+        <div class="thumbnail">
+
+
+        <img ng-src="/views/series/{{ title.link_name }}/{{ title.link_name }}.jpg" alt="{{ title.name }} Picture" />
+        <div class="caption">
+          <a ng-href="#series/{{ title.link_name }}">{{ title.name }}</a>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>

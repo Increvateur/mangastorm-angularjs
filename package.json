@@ -1,0 +1,23 @@
+{
+  "name": "manga_viewer_solo_project",
+  "version": "1.0.0",
+  "description": "Manga Viewing Application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "author": "Matthew Keymer",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-animate": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-ui-bootstrap": "^1.3.2",
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "mongodb": "^2.1.16",
+    "mongoose": "^4.4.11"
+  }
+}
